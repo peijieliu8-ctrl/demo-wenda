@@ -26,8 +26,10 @@ app = FastAPI(title="卓尔智联 AI 问答助手 Demo", version="0.1.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
-    allow_credentials=True,
+    # Demo deployment allows any Vercel preview/frontend origin.
+    # Production should replace "*" with the exact deployed frontend domain.
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )

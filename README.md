@@ -62,6 +62,23 @@
 | 后端健康检查 | `http://127.0.0.1:8000/health` |
 | OpenAPI 文档 | `http://127.0.0.1:8000/docs` |
 
+本地前端联调后端时，在 `frontend/.env.local` 中配置：
+
+```env
+VITE_API_BASE=http://127.0.0.1:8000
+```
+
+## 4.1 Vercel 部署
+
+| 配置项 | 值 |
+| --- | --- |
+| Framework | `Services` |
+| Root Directory | `./` |
+| Frontend Service | `frontend`，路由前缀 `/` |
+| Backend Service | `backend`，路由前缀 `/_backend` |
+
+线上前端默认通过 `/_backend` 访问 FastAPI，例如 `/_backend/api/chat` 和 `/_backend/health`。部署配置见根目录 `vercel.json`。
+
 ## 5. Mock 账号
 
 | 角色 | 用户名 | 密码 | 可演示能力 |

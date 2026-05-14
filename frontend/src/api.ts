@@ -1,9 +1,10 @@
 import type { BadCase, BadCaseStatus, BadCaseType, ChatResponse, Knowledge, LoginResponse, MetricCard, Role, SessionLog } from './types';
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || '';
+const API_BASE = import.meta.env.VITE_API_BASE || '/_backend';
+const NORMALIZED_API_BASE = API_BASE.replace(/\/$/, '');
 
 async function request<T>(path: string, options: RequestInit = {}): Promise<T> {
-  const response = await fetch(`${API_BASE}${path}`, {
+  const response = await fetch(`${NORMALIZED_API_BASE}${path}`, {
     ...options,
     headers: {
       'Content-Type': 'application/json',
