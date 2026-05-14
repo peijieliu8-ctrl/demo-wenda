@@ -1,0 +1,35 @@
+[
+  {
+    "id": "sess_2a6443aaad",
+    "question": "平台保证金规则是什么？",
+    "answer": "根据《平台交易规则》，该问题可按现有规则处理：平台交易规则覆盖商家入驻、保证金、订单履约、售后处理和违规处置。保证金用于保障交易履约和售后责任，具体金额、冻结、扣罚和退回需以商家后台展示及平台协议为准。。建议回复时说明规则依据，并先收集必要材料；涉及金额、审批或实时状态时仍需人工复核。",
+    "answer_status": "answered",
+    "confidence": 0.79,
+    "hit_documents": [
+      "平台交易规则"
+    ],
+    "transferred_to_human": true,
+    "user_feedback": "bad_case",
+    "created_at": "2026-05-12T17:25:59",
+    "response_time_ms": 121,
+    "user_id": "user_admin",
+    "role": "admin"
+  },
+  {
+    "id": "sess_c0c9e1d9ef",
+    "question": "客户签收后发现包装破损，还能申请售后吗？",
+    "answer": "根据《包装破损处理流程》，该问题可按现有规则处理：客户签收后发现包装破损，应先收集外包装、面单、商品状态照片。如商品未受影响，可解释并记录；如影响商品使用或存在污染风险，按售后流程创建工单并提交凭证。涉及赔偿金额需人工复核，不由 AI 直接承诺。。建议回复时说明规则依据，并先收集必要材料；涉及金额、审批或实时状态时仍需人工复核。",
+    "answer_status": "answered",
+    "confidence": 0.94,
+    "hit_documents": [
+      "包装破损处理流程",
+      "生鲜商品售后规则"
+    ],
+    "transferred_to_human": false,
+    "user_feedback": null,
+    "created_at": "2026-05-12T17:22:00",
+    "response_time_ms": 121,
+    "user_id": "user_cs01",
+    "role": "customer_service"
+  }
+]
